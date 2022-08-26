@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: whitesmoke;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  height: 125px;
+  box-shadow: rgba(0, 0, 0, 0.238) 3px 3px 20px 3px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+ul li a {
+  color: #000000;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+ul li a:hover {
+  color: var(--background-color);
+}
+.logo-container {
+  height: 120px;
+}
