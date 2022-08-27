@@ -9,7 +9,7 @@ const Home = () => {
         <h1>
           Enjoy us and discover more cute pets around the world !! (´｡• ω •｡`) ♡
         </h1>
-        <Link to="/login">
+        <Link to="/register">
           <a class="cta">
             <span>Enjoy</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
