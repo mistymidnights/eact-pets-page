@@ -20,13 +20,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
+.link, a {
   font-weight: 500;
   color: var(--background-color);
   text-decoration: none;
   font-weight: bold;
 }
-a:hover {
+.link, a:hover {
   color: var(--primary-color);
 }
 

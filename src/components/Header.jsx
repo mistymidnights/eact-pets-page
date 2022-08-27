@@ -8,20 +8,20 @@ const Header = () => {
       <header>
         <nav>
           <div className="logo-home">
-            <a href="#">
-              <img
-                className="logo-container"
-                src="src\assets\cat copia.png"
-                alt="logo"
-              />
-            </a>
+            <Link className="link" to="/">
+                <img
+                  className="logo-container"
+                  src="src\assets\cat copia.png"
+                  alt="logo"
+                />
+            </Link>
           </div>
           <ul>
             <li>
-              <a href="#">Log in</a>
+              <Link to="/login">Log in</Link>
             </li>
             <li>
-              <a href="#">Register</a>
+              <Link to="/register">Register</Link>
             </li>
           </ul>
         </nav>

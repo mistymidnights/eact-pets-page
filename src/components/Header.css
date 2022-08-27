@@ -22,12 +22,12 @@ ul {
   display: flex;
   gap: 50px;
 }
-ul li a {
+ul li .link {
   color: #000000;
   letter-spacing: 2px;
   font-weight: bold;
 }
-ul li a:hover {
+ul li .link:hover {
   color: var(--background-color);
 }
 .logo-container {
