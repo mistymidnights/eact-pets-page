@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: whitesmoke;
   /* background-image: url("./assets/background.jpg");
   background-size: cover;
   background-attachment: fixed; */
@@ -20,13 +20,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.link, a {
+.link,
+a {
   font-weight: 500;
   color: var(--background-color);
   text-decoration: none;
   font-weight: bold;
 }
-.link, a:hover {
+.link,
+a:hover {
   color: var(--primary-color);
 }
 
