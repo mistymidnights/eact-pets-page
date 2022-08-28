@@ -35,6 +35,7 @@ ul li .link:hover {
 }
 
 /*IMÁGEN DE PERFIL*/
+/*TODO: Ponerle un border solid de uno de los colores de la paleta que tenemos*/
 .avatar_container img {
   height: 100%;
   border-radius: 50%;

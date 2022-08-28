@@ -33,7 +33,7 @@ const Header = () => {
               <li className="li_avatar">
                 <div className="avatar_container">
                   <Link to="/profile">Profile</Link>
-                  <img src={pet?.avatar} alt="Pet Avatar" />
+                  {pet.avatar != "undefined" ? <img src={pet?.avatar} alt="Pet Avatar" /> : null}
                 </div>
               </li>
               <li>
