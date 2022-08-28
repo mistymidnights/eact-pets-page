@@ -33,3 +33,20 @@ ul li .link:hover {
 .logo-container {
   height: 120px;
 }
+
+/*IMÁGEN DE PERFIL*/
+.avatar_container img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.avatar_container {
+  height: 40px;
+  width: 40px;
+}
+
+.li_avatar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

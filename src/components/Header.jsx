@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { JwtContext } from "../contexts/jwtContext";
 import "./Header.css";
 
 const Header = () => {
+  const {pet, logout} = useContext(JwtContext);
+
   return (
     <>
       <header>
@@ -17,14 +21,38 @@ const Header = () => {
             </Link>
           </div>
           <ul>
-            <li>
-              <Link to="/login">Log in</Link>
-            </li>
-            <li>
-              <Link to="/register">Register</Link>
-            </li>
+          {pet ? (
+            <>
+              <li>
+                Welcome {pet.petName}!
+              </li>
+              <li>
+                <Link to="/pets">Pets</Link>
+              </li>
+              {/*TODO: Ver bien dónde es mejor poner la im[agen de perfil :3*/}
+              <li className="li_avatar">
+                <div className="avatar_container">
+                  <Link to="/profile">Profile</Link>
+                  <img src={pet?.avatar} alt="Pet Avatar" />
+                </div>
+              </li>
+              <li>
+                <button onClick={() => logout()}>Logout</button>
+              </li>
+            </>
+            ) : (
+            <>
+              <li>
+                <Link to="/login">Log in</Link>
+              </li>
+              <li>
+                <Link to="/register">Register</Link>
+              </li>
+            </>
+            )}
           </ul>
         </nav>
+
       </header>
     </>
   );
