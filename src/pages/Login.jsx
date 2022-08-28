@@ -31,7 +31,7 @@ const Login = () => {
           </div>
           <form onSubmit={handleSubmit(formSubmit)}>
             <label htmlFor="email">E-mail</label>
-            <input type="text" id="email" name="email" {...register("email")} />
+            <input type="text" id="email" name="email" {...register("email")} placeholder="example@mail.com" />
 
             <label htmlFor="password">Password</label>
             <input
@@ -39,6 +39,7 @@ const Login = () => {
               id="password"
               name="password"
               {...register("password")}
+              placeholder="Password"
             />
 
             <button type="submit">Log In</button>

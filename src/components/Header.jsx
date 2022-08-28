@@ -29,7 +29,7 @@ const Header = () => {
               <li>
                 <Link to="/pets">Pets</Link>
               </li>
-              {/*TODO: Ver bien dónde es mejor poner la im[agen de perfil :3*/}
+              {/*TODO: Ver bien dónde es mejor poner la imágen de perfil :3*/}
               <li className="li_avatar">
                 <div className="avatar_container">
                   <Link to="/profile">Profile</Link>

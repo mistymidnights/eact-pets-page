@@ -39,6 +39,7 @@ ul li .link:hover {
 .avatar_container img {
   height: 100%;
   border-radius: 50%;
+  border: solid 2px #d6a9bd;
 }
 
 .avatar_container {

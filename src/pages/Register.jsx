@@ -37,10 +37,11 @@ const Register = () => {
               id="petName"
               name="petName"
               {...register("petName")}
+              placeholder="Name of Pet"
             />
 
             <label htmlFor="email">E-mail</label>
-            <input type="text" id="email" name="email" {...register("email")} />
+            <input type="text" id="email" name="email" {...register("email")} placeholder="example@mail.com" />
 
             <label htmlFor="password">Password</label>
             <input
@@ -48,6 +49,7 @@ const Register = () => {
               id="password"
               name="password"
               {...register("password")}
+              placeholder="Example123!*$"
             />
 
             <label htmlFor="avatar">Avatar</label>
@@ -63,8 +65,8 @@ const Register = () => {
               />
             </div>
 
-            <label htmlFor="type">Type</label>
-            <input type="text" id="type" name="type" {...register("type")} />
+            <label htmlFor="type">Type (Species)</label>
+            <input type="text" id="type" name="type" {...register("type")} placeholder="Cat?, Dog?... Capybara?" />
 
             <button type="submit">Register</button>
           </form>
