@@ -5,20 +5,24 @@ import { API } from '../services/API';
 import './Pets.css';
 
 const Pets = () => {
+  //Get all Pets
   const [allPets, setAllPets] = useState([]);
+  
+  //Searchbar
   const [filterPet, setFilterPet] = useState("")
-
+  //Searchbar
   const filteredPets = allPets.filter((pet) =>
   pet.petName.toLowerCase().includes(filterPet) ||
   pet.type.toLowerCase().includes(filterPet)
   );
 
+  //Get all Pets
   const getAllPets = async () => {
     API.get("/pets").then((res) => {
       setAllPets(res.data.pets);
     });
   };
-
+  //Get all Pets
   useEffect(() => {
     getAllPets()
   }, [])
