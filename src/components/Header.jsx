@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { JwtContext } from "../contexts/jwtContext";
 import "./Header.css";
 
 const Header = () => {
   const {pet, logout} = useContext(JwtContext);
+  let navigate = useNavigate()
 
   return (
     <>
@@ -37,7 +38,7 @@ const Header = () => {
                 </div>
               </li>
               <li>
-                <button onClick={() => logout()}>Logout</button>
+                <button onClick={() => {logout(), navigate("/")}}>Logout</button>
               </li>
             </>
             ) : (
