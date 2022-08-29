@@ -44,9 +44,6 @@ const Profile = () => {
           <label htmlFor="type">Change Species?</label>
           <input type="text" id="type" name="type" {...register("type")} placeholder="Cat? Dog?... Capybara?" />
 
-          <label htmlFor="password">Change Password?</label>
-          <input type="password" id="password" name="password" {...register("password")} placeholder="Expample123!*$" />
-
           <button type="submit">Edit Profile</button>
         </form>
       </div>
