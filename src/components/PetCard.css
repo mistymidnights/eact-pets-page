@@ -4,8 +4,10 @@
     align-items: center;
     flex-direction: column;
     margin: 3rem;
+    background-color: var(--back-card);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.448) 4px 4px 4px;
 
-    border: 2px solid red;
 }
 
 .profile_img_container img {
@@ -16,4 +18,10 @@
 .profile_img_container {
     width: 250px;
     height: 250px;
+    margin-bottom: 20px;
+}
+
+.contnet_container {
+    color: var(--secondary-back);
+    margin-bottom: 10px;
 }

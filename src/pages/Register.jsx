@@ -73,7 +73,7 @@ const Register = () => {
         </div>
         <div className="background-pet">
           <img
-            src="https://www.kindpng.com/picc/m/588-5883044_kittens-transparent-persian-cat-cute-white-background-hd.png"
+            src="https://cdn.discordapp.com/attachments/701164137081733201/1013716143673987072/pngegg_1.png"
             alt=""
           />
         </div>

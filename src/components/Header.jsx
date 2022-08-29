@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { JwtContext } from "../contexts/jwtContext";
 import "./Header.css";
+import useLocalStorage from 'use-local-storage'
 
-const Header = () => {
+
+const Header = ({switchTheme}) => {
   const {pet, logout} = useContext(JwtContext);
 
+
+const Header = ({switchTheme}) => {
+  const {pet, logout} = useContext(JwtContext);
   return (
     <>
       <header>
@@ -20,6 +25,11 @@ const Header = () => {
                 />
             </Link>
           </div>
+
+          <ul className="navMenu">
+          {pet ? (
+            <>
+              <li className="Welcome">
           <ul>
           {pet ? (
             <>
@@ -51,6 +61,8 @@ const Header = () => {
             </>
             )}
           </ul>
+          <input className="switchInput" type="checkbox" id="toggle_checkbox"></input>
+        <label className="switchLabel" for="toggle_checkbox" onClick={switchTheme}></label>
         </nav>
 
       </header>
