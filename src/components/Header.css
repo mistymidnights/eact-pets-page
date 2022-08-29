@@ -3,7 +3,7 @@
   padding: 0;
 }
 header {
-  background-color: whitesmoke;
+  background-color: var(--primary-color);
   width: 100%;
   position: fixed;
   display: flex;
@@ -15,7 +15,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 70%;
 }
 ul {
   list-style: none;
@@ -23,7 +23,7 @@ ul {
   gap: 50px;
 }
 ul li .link {
-  color: #000000;
+  color: var(--text-color);
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -33,3 +33,41 @@ ul li .link:hover {
 .logo-container {
   height: 120px;
 }
+
+.navMenu li a{
+  color: var(--text-color);
+}
+
+/*IMÁGEN DE PERFIL*/
+/*TODO: Ponerle un border solid de uno de los colores de la paleta que tenemos*/
+.avatar_container img {
+  height: 100%;
+  border-radius: 50%;
+  border: solid 2px #d6a9bd;
+}
+
+.avatar_container {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.li_avatar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navMenu{
+  align-items: center;
+}
+.Welcome{
+  font-size: larger;
+  font-weight: bold;
+  color: darkseagreen;
+}
+
+/* ------- button -------- */
+

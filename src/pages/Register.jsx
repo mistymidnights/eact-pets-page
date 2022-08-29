@@ -22,6 +22,7 @@ const Register = () => {
       }
     });
   };
+
   return (
     <>
       <section className="register_section">
@@ -36,10 +37,11 @@ const Register = () => {
               id="petName"
               name="petName"
               {...register("petName")}
+              placeholder="Name of Pet"
             />
 
             <label htmlFor="email">E-mail</label>
-            <input type="text" id="email" name="email" {...register("email")} />
+            <input type="text" id="email" name="email" {...register("email")} placeholder="example@mail.com" />
 
             <label htmlFor="password">Password</label>
             <input
@@ -47,31 +49,31 @@ const Register = () => {
               id="password"
               name="password"
               {...register("password")}
+              placeholder="Example123!*$"
             />
 
             <label htmlFor="avatar">Avatar</label>
-            <div class="button-wrapper">
-              <span class="label">Upload File</span>
-
+            <div className="button-wrapper">
+              <span className="label">Upload File</span>
               <input
                 type="file"
                 name="upload"
                 id="upload"
-                class="upload-box"
+                className="upload-box"
                 placeholder="Upload File"
                 {...register("avatar")}
               />
             </div>
 
-            <label htmlFor="type">Type</label>
-            <input type="text" id="type" name="type" {...register("type")} />
+            <label htmlFor="type">Type (Species)</label>
+            <input type="text" id="type" name="type" {...register("type")} placeholder="Cat?, Dog?... Capybara?" />
 
             <button type="submit">Register</button>
           </form>
         </div>
         <div className="background-pet">
           <img
-            src="https://www.kindpng.com/picc/m/588-5883044_kittens-transparent-persian-cat-cute-white-background-hd.png"
+            src="https://cdn.discordapp.com/attachments/701164137081733201/1013716143673987072/pngegg_1.png"
             alt=""
           />
         </div>
