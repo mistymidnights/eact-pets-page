@@ -12,7 +12,6 @@ import EditProfile from "./pages/EditProfile";
 import PetDetail from "./pages/PetDetail";
 import useLocalStorage from 'use-local-storage'
 
-
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');

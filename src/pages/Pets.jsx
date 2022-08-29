@@ -29,6 +29,8 @@ const Pets = () => {
 
   return (
     <section className='pets-all-conatainer'>
+    <section>
+      <h2>Pets</h2>
       <SearchBar setFilterPet={setFilterPet} />
       <div className='pets_container'>
         {allPets.length ? 

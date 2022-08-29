@@ -52,6 +52,7 @@ ul li .link:hover {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 40px;
 }
 
 .li_avatar {
@@ -68,6 +69,4 @@ ul li .link:hover {
   font-weight: bold;
   color: darkseagreen;
 }
-
-/* ------- button -------- */
 

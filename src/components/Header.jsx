@@ -9,6 +9,9 @@ import useLocalStorage from 'use-local-storage'
 const Header = ({switchTheme}) => {
   const {pet, logout} = useContext(JwtContext);
 
+
+const Header = ({switchTheme}) => {
+  const {pet, logout} = useContext(JwtContext);
   return (
     <>
       <header>
@@ -22,10 +25,15 @@ const Header = ({switchTheme}) => {
                 />
             </Link>
           </div>
+
           <ul className="navMenu">
           {pet ? (
             <>
               <li className="Welcome">
+          <ul>
+          {pet ? (
+            <>
+              <li>
                 Welcome {pet.petName}!
               </li>
               <li>
