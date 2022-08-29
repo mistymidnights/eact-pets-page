@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 /* font-family: 'Poppins', sans-serif; */
-
+* {
+  transition: all 0.7s;
+}
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -58,7 +60,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.btn-switch{
+.btn-switch {
   width: 70px;
 }
 
@@ -71,6 +73,7 @@ button:focus-visible {
   --secondary-back: #f2f2f2;
   --text-color: #0a0b0d;
   --back-card: #111111;
+  --hover: #e05263;
 }
 [data-theme="dark"] {
   --background-color: #111111;
@@ -79,8 +82,8 @@ button:focus-visible {
   --secondary-back: #242424;
   --text-color: #d6a9bd;
   --back-card: whitesmoke;
+  --hover: #e05263;
 }
-
 
 /* ------btn------- */
 
@@ -105,7 +108,7 @@ button:focus-visible {
   left: 68px;
   width: 37px;
   height: 37px;
-  border: 3px solid red;
+  border: 3px solid #8b5fbf;
 }
 
 .switchLabel:after {
@@ -137,5 +140,5 @@ button:focus-visible {
   left: 103px;
   width: 37px;
   height: 37px;
-  border: 3px solid red;
+  border: 3px solid #8b5fbf;
 }
