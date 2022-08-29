@@ -34,12 +34,11 @@ ul li .link:hover {
   height: 120px;
 }
 
-.navMenu li a{
+.navMenu li a {
   color: var(--text-color);
 }
 
 /*IMÁGEN DE PERFIL*/
-/*TODO: Ponerle un border solid de uno de los colores de la paleta que tenemos*/
 .avatar_container img {
   height: 100%;
   border-radius: 50%;
@@ -61,12 +60,14 @@ ul li .link:hover {
   align-items: center;
 }
 
-.navMenu{
+.navMenu {
   align-items: center;
 }
-.Welcome{
+.Welcome {
   font-size: larger;
   font-weight: bold;
   color: darkseagreen;
 }
-
+.profileNav {
+  margin-right: 30px;
+}
