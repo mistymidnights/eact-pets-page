@@ -8,7 +8,6 @@ import Pets from "./pages/Pets";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
-import EditProfile from "./pages/EditProfile";
 import PetDetail from "./pages/PetDetail";
 import useLocalStorage from 'use-local-storage'
 
@@ -33,7 +32,6 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/editprofile" element={<EditProfile />} />
           </Routes>
           <Footer />
         </Router>
