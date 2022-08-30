@@ -15,3 +15,10 @@ a {
 a:hover {
   color: var(--background-color);
 }
+@media (max-width: 576px) {
+  footer {
+    background-color: var(--text-color);
+    height: 30px;
+    font-size: 12px;
+  }
+}

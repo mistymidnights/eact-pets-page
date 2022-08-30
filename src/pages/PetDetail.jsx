@@ -1,36 +1,37 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { JwtContext } from '../contexts/jwtContext';
-import { useParams } from 'react-router-dom'
-import { API } from '../services/API';
+import React, { useContext, useEffect, useState } from "react";
+import { JwtContext } from "../contexts/jwtContext";
+import { useParams } from "react-router-dom";
+import { API } from "../services/API";
+import "./PetDetail.css";
 
 const PetDetail = () => {
   const { id } = useParams();
-  const [petOtherDetail, setPetOtherDetail] = useState(undefined)
+  const [petOtherDetail, setPetOtherDetail] = useState(undefined);
 
   const getPetById = async () => {
-    API.get(`/pets/${id}`).then((res) =>{
-    setPetOtherDetail(res.data);
+    API.get(`/pets/${id}`).then((res) => {
+      setPetOtherDetail(res.data);
     });
   };
 
   useEffect(() => {
     getPetById();
-    console.log(id)
+    console.log(id);
   }, []);
 
-  
   return (
-    <figure className='pet_detail'>
+    <figure className="pet_detail">
       {petOtherDetail != undefined ? (
         <>
-          <h2>{petOtherDetail.petName}</h2>
           <img src={petOtherDetail.avatar} alt={petOtherDetail.petName} />
-          <h3>{petOtherDetail.type}</h3>
-          {/*TODO: ARRAY DE IMAGENES SE PINTA ACA*/}
+          <h2>{petOtherDetail.petName}</h2>
+          <h3>Species: {petOtherDetail.type}</h3>
         </>
-      ) : (<p>Loading...</p>)}
+      ) : (
+        <p>Loading...</p>
+      )}
     </figure>
-  )
-}
+  );
+};
 
-export default PetDetail
+export default PetDetail;

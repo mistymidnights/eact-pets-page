@@ -37,3 +37,20 @@ svg {
 svg:hover {
   color: var(--hover);
 }
+@media (max-width: 576px) {
+  .About-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 5%;
+  }
+  .profile-photo img {
+    height: 200px;
+    z-index: -1;
+  }
+  .aboutCard h1 {
+    font-size: 25px;
+  }
+}

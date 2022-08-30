@@ -49,6 +49,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: var(--button);
+  color: #0a0b0d;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -141,4 +142,68 @@ button:focus-visible {
   width: 37px;
   height: 37px;
   border: 3px solid #8b5fbf;
+}
+
+@media (max-width: 576px) {
+  #toggle_checkbox:checked + label:before {
+    top: 20px;
+    right: 0;
+    left: 0px;
+    width: 50px;
+    height: 27px;
+    border: 3px solid #143240;
+  }
+  #toggle_checkbox:checked + label:after {
+    top: 23px;
+    left: 3px;
+    width: 21px;
+    height: 21px;
+    border: 3px solid #8b5fbf;
+  }
+  .switchLabel:after {
+    top: 20px;
+    right: 0;
+    left: 20;
+    width: 50px;
+    height: 27px;
+    border: 3px solid #143240;
+  }
+  .switchLabel:before {
+    top: 23px;
+    left: 26px;
+    width: 21px;
+    height: 21px;
+    border: 3px solid #8b5fbf;
+  }
+  .switchLabel {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: block;
+    width: 50px;
+    height: 70px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .register_section {
+    padding-left: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0px;
+    padding-top: 169px;
+  }
+  form {
+    padding: 40px;
+    margin-right: 0px;
+  }
+  .background-pet {
+    display: none;
+  }
+  section {
+    background-color: var(--secondary-back);
+    padding-top: 70px;
+  }
 }

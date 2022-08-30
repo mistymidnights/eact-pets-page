@@ -77,3 +77,13 @@
 .cta:active {
   transform: scale(0.96);
 }
+
+@media (max-width: 576px) {
+  .title-home {
+    width: 70%;
+    bottom: 25%;
+  }
+  .title-home h1 {
+    font-size: 30px;
+  }
+}

@@ -14,11 +14,7 @@ const Header = ({ switchTheme }) => {
         <nav>
           <div className="logo-home">
             <Link className="link" to="/">
-              <img
-                className="logo-container"
-                src="src\assets\cat copia.png"
-                alt="logo"
-              />
+              <img className="logo-container" src="\cat-copia.png" alt="logo" />
             </Link>
           </div>
 
@@ -41,6 +37,7 @@ const Header = ({ switchTheme }) => {
                 </li>
                 <li>
                   <button
+                    className="btn-logout"
                     onClick={() => {
                       logout(), navigate("/");
                     }}
