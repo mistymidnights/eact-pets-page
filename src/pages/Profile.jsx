@@ -18,7 +18,6 @@ const Profile = () => {
     formData.append("petName", data.petName);
     formData.append("avatar", data.avatar[0]);
     formData.append("type", data.type);
-    formData.append("password", data.password);
 
     API.patch(`/pets/${pet._id}`, formData).then((res) => {
       if (res) {

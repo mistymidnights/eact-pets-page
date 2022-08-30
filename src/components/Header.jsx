@@ -67,7 +67,7 @@ const Header = ({ switchTheme }) => {
           ></input>
           <label
             className="switchLabel"
-            for="toggle_checkbox"
+            htmlFor="toggle_checkbox"
             onClick={switchTheme}
           ></label>
         </nav>
