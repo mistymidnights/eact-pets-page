@@ -25,7 +25,9 @@ h2 {
     background-color: var(--secondary-back);
     
 }
-.searchbar_container{
-    margin: 50px;
+.searchbar_container {
+  padding-top: 150px;
+  background-color: var(--secondary-back);
 }
+
 
